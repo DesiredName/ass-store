@@ -8,5 +8,14 @@
 </head>
 <body>
     Hello
+    <div id="test"></div>
+    <script>
+        fetch(new URL(".netlify/functions/hello-world", window.location.origin))
+            .then(res => res.json())
+            .then(res => res.message)
+            .then(msg => {
+                document.getElementById('test').innerHTML = msg
+            })
+    </script>
 </body>
 </html>
