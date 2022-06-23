@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "."
+  },
   "dependencies": {
     "@netlify/functions": "^1.0.0"
   }
