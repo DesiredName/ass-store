@@ -1,9 +1,10 @@
 import { Handler } from '@netlify/functions'
 import { DocumentStore } from 'ravendb'
 import * as fs from 'fs'
+import path from 'path';
 
 const store = new DocumentStore('https://a.free.ass-store.ravendb.cloud', 'test', {
-  certificate: fs.readFileSync('certificate.pfx'),
+  certificate: fs.readFileSync(path.join(__dirname, 'certificate.pfx')),
   password: '4FE45E96448CCD2D830D5C1E98A306D',
   type: 'pfx'
 });
