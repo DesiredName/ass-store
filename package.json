@@ -5,6 +5,9 @@
   "dependencies": {
     "@netlify/functions": "^1.0.0",
     "@types/node": "^14.18.21",
+    "ravendb": "^5.2.4"
+  },
+  "devDependencies": {
     "typescript": "^4.7.4"
   }
 }
