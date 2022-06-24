@@ -3,7 +3,7 @@ import { DocumentStore } from 'ravendb'
 import * as fs from 'fs'
 
 const store = new DocumentStore('https://a.free.ass-store.ravendb.cloud', 'test', {
-  certificate: fs.readFileSync('./certificate.pfx'),
+  certificate: fs.readFileSync('certificate.pfx'),
   password: '4FE45E96448CCD2D830D5C1E98A306D',
   type: 'pfx'
 });
