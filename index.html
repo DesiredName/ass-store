@@ -14,7 +14,7 @@
             .then(res => res.json())
             .then(res => res.message)
             .then(msg => {
-                document.getElementById('test').innerHTML = msg
+                document.getElementById('test').innerHTML = JSON.stringify(msg)
             })
     </script>
 </body>
